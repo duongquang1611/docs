@@ -39,12 +39,6 @@ Trường hợp `Ok`: Trả về đối tượng (`Http Code 200`)
 
 Cập nhật đối tượng `Customer` theo `{id}`
 
-Tham số truyền vào:
-- `{id}`
-- `Customer` có chứa cả `{id}`
-
-Trường hợp `{id}` khác với Customer.Id: Trả về `Http Code 400`
-
 Trường hợp lấy `Customer` theo `{id}` và kết quả trả về `null`: Trả về `Http code 404`
 
 Trường hợp `Ok`: Trả về No Content (`Http Code 204`)
