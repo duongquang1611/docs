@@ -13,6 +13,8 @@
 
 Trả về list đối tượng `Customer`
 
+Nên trả các thông tin cơ bản, đủ dùng
+
 Kết quả cần phân trang (Có các thuộc tính sau):
 - `page`: Trang số mấy
 - `pageSize`: Bao nhiêu phần tử 1 trang
@@ -30,6 +32,8 @@ Kết quả trả về: `Http Code 201`
 #### `[GET]: customers/{id}`
 
 Trả về đối tượng `Customer` theo `{id}`
+
+Nên trả về thông tin đầy đủ tất cả thuộc tính
 
 Trường hợp khi đối tượng lấy theo `{id}` là `null`: Trả về `Http Code 404`
 
