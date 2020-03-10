@@ -21,7 +21,18 @@ Kết quả cần phân trang (Có các thuộc tính sau):
 - `sortField`: Sắp xếp theo trường nào
 - `isAsc`: Sắp xếp tăng hay giảm
 
-Trường hợp `Ok`: Trả về list đối tượng đã được phân trang kèm `Http Code 200`
+Ngoài ra, đối tượng trả về cần thêm thuộc tính `count` (Tổng số đối tượng trong List đối tượng thỏa mãn)
+
+Trường hợp `Ok`: Trả về list đối tượng đã được phân trang kèm `count` kèm `Http Code 200`
+
+Ví dụ:
+
+```
+    {
+        count: 12,
+        data: [...]
+    }
+```
 
 #### `[POST]: customers`
 
