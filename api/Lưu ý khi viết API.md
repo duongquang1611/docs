@@ -29,8 +29,8 @@ Ví dụ:
 
 ```
     {
-        count: 12,
-        data: [...]
+        __count: 12,
+        results: [...]
     }
 ```
 
