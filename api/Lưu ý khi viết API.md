@@ -16,8 +16,9 @@ Trả về list đối tượng `Customer`
 Nên trả các thông tin cơ bản, đủ dùng
 
 Kết quả cần phân trang (Có các thuộc tính sau):
-- `page`: Trang số mấy
-- `pageSize`: Bao nhiêu phần tử 1 trang
+- `isPaging`: Có phân trang hay không
+- `offset`
+- `limit`
 - `sortField`: Sắp xếp theo trường nào
 - `isAsc`: Sắp xếp tăng hay giảm
 
