@@ -57,7 +57,7 @@ Cập nhật đối tượng `Customer` theo `{id}`
 
 Trường hợp lấy `Customer` theo `{id}` và kết quả trả về `null`: Trả về `Http code 404`
 
-Trường hợp `Ok`: Trả về `Http Code 204` (`No Content`)
+Trường hợp `Ok`: Trả về `Http Code 204` (`No Content`) hoặc `Http Code 200` (Nếu trả về kèm thực thể)
 
 #### `[DELETE]: customers/{id}`
 
@@ -65,4 +65,4 @@ Xóa đối tượng `Customer` theo `{id}`
 
 Trường hợp lấy đối tượng theo `{id}` và đối tượng `null`: Trả về `Http code 404`
 
-Trường hợp `Ok`: Trả về `Http Code 204` (`No Content`)
+Trường hợp `Ok`: Trả về `Http Code 204` (`No Content`) hoặc `Http Code 200` (Nếu trả về kèm thực thể)
