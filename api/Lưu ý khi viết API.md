@@ -39,7 +39,7 @@ Ví dụ:
 
 Tạo mới 1 đối tượng `Customer`
 
-Kết quả trả về: `Http Code 201`
+Kết quả trả về: `Http Code 201` (`Created`) hoặc `Http Code 200` (Kèm thực thể)
 
 #### `[GET]: customers/{id}`
 
