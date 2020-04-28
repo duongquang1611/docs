@@ -16,8 +16,9 @@ Trả về list đối tượng `Customer`
 Nên trả các thông tin cơ bản, đủ dùng
 
 Kết quả cần phân trang (Có các thuộc tính sau):
-- `page`: Trang số mấy
-- `pageSize`: Bao nhiêu phần tử 1 trang
+- `isPaging`: Có phân trang hay không
+- `offset`
+- `limit`
 - `sortField`: Sắp xếp theo trường nào
 - `isAsc`: Sắp xếp tăng hay giảm
 
@@ -38,7 +39,7 @@ Ví dụ:
 
 Tạo mới 1 đối tượng `Customer`
 
-Kết quả trả về: `Http Code 201`
+Kết quả trả về: `Http Code 201` (`Created`) hoặc `Http Code 200` (Kèm thực thể)
 
 #### `[GET]: customers/{id}`
 
@@ -56,7 +57,7 @@ Cập nhật đối tượng `Customer` theo `{id}`
 
 Trường hợp lấy `Customer` theo `{id}` và kết quả trả về `null`: Trả về `Http code 404`
 
-Trường hợp `Ok`: Trả về `Http Code 204` (`No Content`)
+Trường hợp `Ok`: Trả về `Http Code 204` (`No Content`) hoặc `Http Code 200` (Nếu trả về kèm thực thể)
 
 #### `[DELETE]: customers/{id}`
 
@@ -64,4 +65,4 @@ Xóa đối tượng `Customer` theo `{id}`
 
 Trường hợp lấy đối tượng theo `{id}` và đối tượng `null`: Trả về `Http code 404`
 
-Trường hợp `Ok`: Trả về `Http Code 204` (`No Content`)
+Trường hợp `Ok`: Trả về `Http Code 204` (`No Content`) hoặc `Http Code 200` (Nếu trả về kèm thực thể)
