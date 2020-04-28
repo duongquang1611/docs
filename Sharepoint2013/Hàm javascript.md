@@ -1,7 +1,7 @@
 ## Một số hàm java script
 - #### Lấy `sum` của 1 mảng
 ```javascript
-	[1, 2, 3, 4].reduce((a, b) => a + b, 0)
+[1, 2, 3, 4].reduce((a, b) => a + b, 0)
 ```
 - #### Xửa lý `args` trên `form` truyền vào
 ```javascript
