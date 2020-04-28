@@ -295,9 +295,8 @@ XepLopEdit(entitiesEdit: any): Promise<HttpResponse> {
 	</div>
 </div>
 ```
-```java script
+```javascript
 // call popup
-
 function popup() {
 	modals.modal('Chọn đơn vị')
 		.content($('#popup-template').html())
