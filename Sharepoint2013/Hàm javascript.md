@@ -120,23 +120,23 @@ function CheckRadio(id,value)
 ```
 - #### Open popup by url
 ```javascript
-	function ViewDanhSachDonQuery()
-	{
-		var data = GetQueryString("ids").split(',').join('#');
-		var params = {
-			title: "Danh sách đơn thư",
-			url: currentContext.webUrl + "/pages/popup/view-ho-so-tcd.aspx",
-			width: 1000,
-			height: 600,
-			args:data,
-			maximized: false                
-		};
-		ShowPopup(params);
-	}
-    
-	$(window).load(function(){
-		ExecuteOrDelayUntilScriptLoaded(ViewDanhSachDonQuery, 'sp.js');
-	});
+function ViewDanhSachDonQuery()
+{
+	var data = GetQueryString("ids").split(',').join('#');
+	var params = {
+		title: "Danh sách đơn thư",
+		url: currentContext.webUrl + "/pages/popup/view-ho-so-tcd.aspx",
+		width: 1000,
+		height: 600,
+		args:data,
+		maximized: false                
+	};
+	ShowPopup(params);
+}
+
+$(window).load(function(){
+	ExecuteOrDelayUntilScriptLoaded(ViewDanhSachDonQuery, 'sp.js');
+});
 ```
 - #### Get item in listitem
 ```javascript
