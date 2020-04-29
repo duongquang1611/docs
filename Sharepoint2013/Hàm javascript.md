@@ -22,10 +22,10 @@ grid.filter(caml);
 ```
 - #### Custom datepicker
 ```javascript
-function CustomDatepiker(id,format,viewMode,minViewMode){
-if(format) format = "yyyy";
-if(viewMode) viewMode = "years";
-if(minViewMode) minViewMode= "years";
+function CustomDatepicker(id,format,viewMode,minViewMode){
+    if(format) format = "yyyy";
+    if(viewMode) viewMode = "years";
+    if(minViewMode) minViewMode= "years";
 	var dp = $('#'+id);
 	$(dp).datepicker('remove');
 	$(dp).datepicker({
@@ -36,7 +36,6 @@ if(minViewMode) minViewMode= "years";
 	}).on('changeDate', function(e){
 		$(this).datepicker('hide');	
 	});
-}
 }
 
 ```
@@ -65,7 +64,7 @@ function CamlAnd(a,b){
 ```
 - #### Call services
 ```javascript
-var re=sysService.ImportXml(currentContext.webUrl,"CapPhepLaoDong",returnvalue);
+var re = sysService.ImportXml(currentContext.webUrl,"CapPhepLaoDong",returnvalue);
 WcfService.post(urlService, 'TongHopLaoDongNuocNgoai', '{"data":"' + dt + '", "inputXml":"","id":"","mabaocao":""}', false, false, function(e) {
         if (e == '1') {
             ShowToast('Thực hiện thành công!', 'success');
@@ -106,7 +105,7 @@ function GenDataSearch(){
 ```
 - #### Check radio button
 ```javascript
-function CheckRadio(id,value)
+function CheckRadio(id, value)
 {
 	var rd = $('#'+id).closest('div[ctype="RadioList"]');
 	$(rd).find('input[name="'+id+'"]').each(function(){
@@ -190,7 +189,7 @@ function createPortlet(name,content){
 ```
 - #### Call Ashx
 ```javascript
-function CallAshx(url){
+function callAshx(url){
 	var xmlHttpReq= createXMLHttpRequest();
 	xmlHttpReq.open("GET", url, false);
 	xmlHttpReq.send(null);
@@ -221,4 +220,35 @@ function roundNumber(num, scale) {
     }
 }
 
+```
+- #### Cách truyền id và lấy id trong table
+```html
+<table id="data-table">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tu</td>
+            <td data-id="1" delete-button><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>Hieu</td>
+            <td data-id="2" delete-button><button>Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+```
+```javascript
+// Từ bảng có id là data-table
+// Truy cập vào những phần tử bên trong có thuộc tính delete-button
+// Xử lý hàm onclick
+$("#data-table").on('click', '[delete-button]', function(){
+    // Lấy id từ trường data-id
+    var id = $(this).attr("data-id");
+    alert(id);
+}) 
 ```
