@@ -3,10 +3,10 @@
 - Convert Object to Json
 ```csharp
 public string ConvertObjectToJSON(object obj)
-        {
-            JavaScriptSerializer result = new JavaScriptSerializer();
-            return result.Serialize(obj);
-        }
+{
+    JavaScriptSerializer result = new JavaScriptSerializer();
+    return result.Serialize(obj);
+}
 new JavaScriptSerializer().Serialize(data); 
 ```
 - Check user in group
