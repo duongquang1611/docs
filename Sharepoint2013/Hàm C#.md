@@ -11,26 +11,26 @@ new JavaScriptSerializer().Serialize(data);
 ```
 - Check user in group
 ```csharp
-	public static string CheckUserInGroups(string _groups)
+public static string CheckUserInGroups(string _groups)
+    {
+        string result = "";
+        try
         {
-            string result = "";
-            try
+            SPUser curUser = SPContext.Current.Web.CurrentUser;
+            string[] groups = _groups.Split(new string[] { "##" }, StringSplitOptions.RemoveEmptyEntries);
+            List<string> _result = new List<string>();
+            foreach (string group in groups)
             {
-                SPUser curUser = SPContext.Current.Web.CurrentUser;
-                string[] groups = _groups.Split(new string[] { "##" }, StringSplitOptions.RemoveEmptyEntries);
-                List<string> _result = new List<string>();
-                foreach (string group in groups)
-                {
-                    if (TDPermission.IsUserMemberOfGroup(curUser, group) == true)
-                        _result.Add("1");
-                    else
-                        _result.Add("0");
-                }
-                result = string.Join("#", _result.ToArray());
+                if (TDPermission.IsUserMemberOfGroup(curUser, group) == true)
+                    _result.Add("1");
+                else
+                    _result.Add("0");
             }
-            catch (Exception ex) { WriteLogs("CheckUserInGroups", ex + ""); }
-            return result;
+            result = string.Join("#", _result.ToArray());
         }
+        catch (Exception ex) { WriteLogs("CheckUserInGroups", ex + ""); }
+        return result;
+    }
 ```
 - Đọc multilinetext có thẻ div
 ```csharp
