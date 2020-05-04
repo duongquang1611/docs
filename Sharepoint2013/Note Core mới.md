@@ -171,9 +171,9 @@ XepLopEdit(entitiesEdit: any): Promise<HttpResponse> {
   <input type="text" name="Name" class="form-control" placeholder="Phân hệ" data-val="true" data-val-required="Tên là bắt buộc!" >
   required
   <input type="text" name="Account" class="form-control" 
-  					placeholder="Tài khoản" 
-                    data-val="true"
-                    data-val-required="Tài khoản là bắt buộc!">
+        placeholder="Tài khoản" 
+        data-val="true"
+        data-val-required="Tài khoản là bắt buộc!">
  <div class="form-control-feedback" data-valmsg-for="Account" data-valmsg-replace="true"></div>
  ```
  
@@ -340,29 +340,4 @@ function popup() {
                         data-allow-clear="true" multiple>
 </select>
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
