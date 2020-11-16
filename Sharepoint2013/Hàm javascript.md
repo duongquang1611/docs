@@ -22,7 +22,7 @@ grid.filter(caml);
 ```
 - #### Custom datepicker
 ```javascript
-function CustomDatepicker(id,format,viewMode,minViewMode){
+function CustomDatepicker(id, format, viewMode, minViewMode){
     if(format) format = "yyyy";
     if(viewMode) viewMode = "years";
     if(minViewMode) minViewMode= "years";
