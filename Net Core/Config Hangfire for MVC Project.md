@@ -1,0 +1,1 @@
+Link tham khảo: [https://docs.hangfire.io/en/latest/getting-started/aspnet-core-applications.html](https://docs.hangfire.io/en/latest/getting-started/aspnet-core-applications.html)
