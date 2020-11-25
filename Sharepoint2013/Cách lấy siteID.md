@@ -1,0 +1,2 @@
+- Truy cập đường dẫn `/_api/site`
+- Tìm kiếm và lấy giá trị của thẻ GUID
