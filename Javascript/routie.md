@@ -1,3 +1,4 @@
+# Routie
 ## Giới thiệu
 Giả sử bạn muốn tùy chỉnh một đường dẫn
 - Khi trạng thái bằng **Chưa duyệt** thì xử lý kiểu chưa duyệt. 
@@ -12,6 +13,10 @@ Routie là giải pháp cho vấn đề này
 Import file js sau:
 - [Phiên bản development](https://raw.githubusercontent.com/jgallen23/routie/master/dist/routie.js)
 - [Phiên bản production](https://raw.githubusercontent.com/jgallen23/routie/master/dist/routie.min.js)
+
+Khi sử dụng Core:
+- Đã tích hợp
+- Sử dụng như bình thường
 ### Sử dụng
 ```javascript
 routie('trangthai=:trangthai', function(trangthai){
