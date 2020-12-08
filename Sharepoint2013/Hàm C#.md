@@ -110,11 +110,6 @@ var doc = web.Load(url);
  var _node = from p in items1 join q in items2 on p.SoKy equals q.Ma select new { p, q.ThuTu };
  var items = from x in _node orderby x.p.NamBaoCaoText, x.ThuTu select x.p;
 ```
-- Get public tokenkey
-	- Get Public Token Key
-	- C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\x64\sn.exe
-	- -Tp $(TargetPath)
-	- Check User Output Windows
 
 - Xem file trực tiếp
 ```csharp
