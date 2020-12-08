@@ -5,7 +5,7 @@
     > cd C:\Windows\System32\inetsrv
     > appcmd list wp
 ```
-- Nhớ **ID** của công đang chạy để xuống bước sau
+- Nhớ **ID** của cổng đang chạy để xuống bước sau
 ### Attach process để debug
 - Trong Visual Studio. Chọn **Debug** -> **Attach To Process**
 - Tìm ô **Filter Process** nhập `w3p`
