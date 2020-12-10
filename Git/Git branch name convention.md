@@ -37,12 +37,12 @@ Ví dụ:
 Một nhánh để xử lý việc build các phiên bản mới hay thực hiện hoạt động chạy mã.  
 Ví dụ:
     - build/jacoco-metric
-- Realease
+- **Realease**
 Một nhánh để gắn thẻ phiên bản phát hành cụ thể
 Ví dụ:
-    - release/myapp-1.01.123
-Git cũng hỗ trợ gắn thẻ tagg cho những commit cụ thể của kho lưu trữ. Một nhánh phát hành được sử dụng nếu có nhu cầu cung cấp mã để checkout hoặc sử dụng.
-- Merging
+    - release/myapp-1.01.123  
+Git cũng hỗ trợ gắn thẻ tag cho những commit cụ thể của kho lưu trữ. Một nhánh phát hành được sử dụng nếu có nhu cầu cung cấp mã để checkout hoặc sử dụng.
+- **Merging**
 Một nhánh tạm thời để giải quyết xung đột hợp nhất, thường là giữa bản `dev` mới nhất và một `feature` hoặc nhánh `hotfix`
 Điều này cũng có thể được sử dụng nếu hai nhánh của một `feature` đang được nhiều nhà phát triển làm việc cần được hợp nhất, xác minh và hoàn thiện.  
 Ví dụ:
