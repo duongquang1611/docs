@@ -16,15 +16,6 @@ tdcore.modals
 .then() //xử lý sau khi đóng
 
 ```
-
-#### ShowToast
-```javascript
-toastr.success("Thực hiện thành công");
-toastr.warning("");
-toastr.error("");
-toastr.info("");
-```
-
 #### Reload table
 ```javascript
 var table = $('.td-datatable').DataTable();
