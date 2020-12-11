@@ -1,15 +1,15 @@
 ### Commit types:
 - **feat**  
 Tính năng mới bạn đang thêm vào một ứng dụng cụ thể
-- **fix**
+- **fix**  
 Một bug fix
-- **style**
+- **style**  
 Tính năng và cập nhật liên quan đến styling
-- **refactor**
+- **refactor**  
 Cấu trúc lại một phần cụ thể của mã cơ sở
-- **test**
+- **test**  
 Mọi thứ liên quan đến kiểm thử
-- **docs**
+- **docs**  
 Mọi thứ liên quan đến tài liệu
-- **chore**
+- **chore**  
 Liên quan đến bảo trì mã
