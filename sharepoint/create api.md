@@ -98,9 +98,9 @@ namespace TD.Example.WebApi.Integration
 } 
 ```
 ### Tạo signing key with strong name
-[Link](https://git.tandan.com.vn/tubs/docs/-/blob/master/sharepoint/trick/create-Signal-Key-With-Strong-Name.md)
+[Link](trick/create-Signal-Key-With-Strong-Name.md)
 ### Tạo public key
-[Link](https://git.tandan.com.vn/tubs/docs/-/blob/master/sharepoint/trick/get-Public-Token-Key.md)
+[Link](trick/get-Public-Token-Key.md)
 ### Thêm trong web.config
 ```xml
 <add name="ApiModule" type="TD.Example.WebApi.Integration.ApiModule, TD.Example.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2257c8927d1cdf92" />
