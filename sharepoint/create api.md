@@ -103,7 +103,11 @@ namespace TD.Example.WebApi.Integration
 [Link](trick/get-Public-Token-Key.md)
 ### Thêm trong web.config
 ```xml
-<add name="ApiModule" type="TD.Example.WebApi.Integration.ApiModule, TD.Example.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2257c8927d1cdf92" />
+  <ApiIntegrationConfigs>
+    <ApiIntegrations>
+      <add name="BCApiModule" type="TD.BC.API.Integration.BCApiModule, TD.BC.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2fcbd4e65ceb67c7" />
+    </ApiIntegrations>
+  </ApiIntegrationConfigs>
 ```
 ```xml
 <section name="ApiIntegrationConfigs" type="TD.Core.Api.Mvc.Integration.ApiIntegrationConfigsSection, TD.Core.Api.Mvc.Integration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a6dc52edcc09b88" />
